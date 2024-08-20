@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №2</title>
+    <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Повторення вивченого у 3 класі. Письмове множення і ділення</h1>
+            <h2>>№003 - Обчислення способом округлення. Розв’язування рівнянь.  Розв’язування задач двома способами. (с. 7-9, № 25-34)</h2>
+            <!--  -->
+           
+            <div class="question p">
+                <p>25. Вибери круглі числа серед поданих. Запиши їх.</p>
+                <p>390, 45, 500, 70, 210, 5, 1000, 67, 555, 10</p>
+                <p class="red">Числа, які закінчуються нулем, називають круглими числами.</p>
+                <button onclick="toggleAnswer(1)" class="answ">відповідь</button>
+                <p id="answer1" class="answer blue" >Круглі числа: 390, 500, 70, 210, 1000, 10</p>
+            </div>
+        
+            <div class="question p">
+                <p>26. Для кожного із чисел назви два круглі числа, між якими воно міститься.</p>
+                <p>155, 37, 299, 55, 127, 584</p>
+                <button onclick="toggleAnswer(2)" class="answ">відповідь</button>
+                <p id="answer2" class="answer blue">
+                    Число 155 міститься між числами 150 і 160.<br>
+                    Число 37 міститься між числами 30 і 40.<br>
+                    Число 299 міститься між числами 290 і 300.<br>
+                    Число 55 міститься між числами 50 і 60.<br>
+                    Число 127 міститься між числами 120 і 130.<br>
+                    Число 584 міститься між числами 580 і 590.
+                </p>
+            </div>
+        
+            <div class="question p">
+                <p>27. Для кожного із чисел назви два розрядні числа третього розряду, між якими воно міститься.</p>
+                <p>148, 285, 730, 899, 444, 580</p>
+                <button onclick="toggleAnswer(3)" class="answ">відповідь</button>
+                <p id="answer3" class="answer blue">
+                    Число 148 міститься між числами 100 і 200.<br>
+                    Число 285 міститься між числами 200 і 300.<br>
+                    Число 730 міститься між числами 700 і 800.<br>
+                    Число 899 міститься між числами 800 і 900.<br>
+                    Число 444 міститься між числами 400 і 500.<br>
+                    Число 580 міститься між числами 500 і 600.
+                </p>
+            </div>
+        
+            <div class="question p">
+                <p>28. Обчисли способом округлення за зразком.</p>
+                <div class="two">
+                    <p>140+190= <br>267+379= <br> 746–390=</p>
+                    <p>567+97= <br> 777+197= <br> 473–195=</p>
+                </div>
+                <p><span class="red">Зразок.</span> У сумі 140 + 190 подамо доданок 190 як різницю чисел 200 і 10. <br>140+190=140+200–10=340–10=330.
+                </p>
+                <button onclick="toggleAnswer(4)" class="answ">відповідь</button>
+                <p id="answer4" class="answer blue">
+                    267 + 379 = 270 + 380 - 3 - 1 = 650 - 4 = 646<br>
+                    746 - 390 = 750 - 400 + 4 + 10 = 350 + 14 = 364<br>
+                    567 + 97 = 570 + 100 - 3 - 3 = 670 - 6 = 664<br>
+                    777 + 197 = 780 + 200 - 3 - 3 = 980 - 6 = 974<br>
+                    473 - 195 = 475 - 200 + 2 + 5 = 275 + 7 = 282
+                </p>
+            </div>
+        
+            <div class="video">
+                <iframe src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2126793&authkey=!AOoyYFlTsl29-Bc&em=2" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </main>
+    </div>
+    <script src="../../script.js"></script>
+</body>
+
+</html>

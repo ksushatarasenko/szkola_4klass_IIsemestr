@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №3-english</title>
+    <link rel="stylesheet" href="../../style.css">
+    <style>
+        .comic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .bubble {
+            cursor: pointer;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
+
+        .quiz {
+            margin: 20px 0;
+        }
+
+        .quiz button {
+            margin: 5px;
+            padding: 10px;
+        }
+
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../../mystectvo/mystectvoHome.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>English - </h1>
+            <h2>№003 -  <br>Smart Junior 4 Unit 1 Where Are You From? Smart Kids с. 10-11</h2>
+            <!-- video Lesson -->
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/aJSIoeCbtPI?si=3C_A1sKRr5GO3DdW" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="image">
+                <h3>1. Smart kids</h3>
+                <audio src="./audio/SJ4-M1/009_M01_SMART_KIDS_VOCABULARY.mp3" controls></audio>
+                <div>
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127200&authkey=%21AO1gILPtuISuZCc&width=1478&height=326"
+                        alt="10_1">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127202&authkey=%21AJKSbXc3LBMmjZw&width=1274&height=262"
+                        alt="11_1">
+                </div>
+            </div>
+            <section class="comic">
+                <h2>1. Listen and read.</h2>
+                <audio src="./audio/SJ4-M1/010_M01_SMART_KIDS_ACT_1.mp3" controls></audio>
+                <div class="image">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127201&authkey=%21ANfuNA_NorC_Y9g&width=1528&height=1794"
+                        alt="Comic Strip 1">
+                </div>
+            </section>
+            <!-- 2 -->
+            <h2>Read activity 1 again and say True or False</h2>
+            <div class="two">
+                <div class="image">
+                    <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127203&authkey=%21AFYHeMo-wwZMay0&width=1472&height=650"
+                        alt="11_2">
+                </div>
+                <section class="true-false">
+                    <h3>Правда или Ложь</h3>
+                    <p class="p">а. She's Korean.</p>
+                    <button onclick="checkTrueFalse('a', false)" class="btn">true</button>
+                    <button onclick="checkTrueFalse('a', true)" class="btn">false</button>
+                    <div class="result" id="tf-result-a"></div>
+                    <p class="p">б. His name's Greg.</p>
+                    <button onclick="checkTrueFalse('b', true)" class="btn">true</button>
+                    <button onclick="checkTrueFalse('b', false)" class="btn">false</button>
+                    <div class="result" id="tf-result-b"></div>
+                    <p class="p">в. Her name's Sandy.</p>
+                    <button onclick="checkTrueFalse('c', true)" class="btn">true</button>
+                    <button onclick="checkTrueFalse('c', false)" class="btn">false</button>
+                    <div class="result" id="tf-result-c"></div>
+                    <p class="p">г. He's Mexican.</p>
+                    <button onclick="checkTrueFalse('d', true)" class="btn">true</button>
+                    <button onclick="checkTrueFalse('d', false)" class="btn">false</button>
+                    <div class="result" id="tf-result-d"></div>
+                </section>
+            </div>
+            <div class="image">
+                <audio src="./audio/SJ4-M1/011_M01_SMART_KIDS_ACT_3.mp3" controls></audio>
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127204&authkey=%21AAKgJ3A4SoLS6Ls&width=1438&height=520" alt="11_3">
+            </div>
+            <div class="image">
+                <img src="https://onedrive.live.com/embed?resid=53BD6A3EE8A255FE%2127205&authkey=%21ABXa7qMitEk3rAY&width=1608&height=672" alt="11_4">
+            </div>
+
+            
+        </main>
+    </div>
+    <script>
+        function checkAnswers() {
+            const answers = {
+                q1: "is",
+                q2: "is",
+                q3: "are",
+                q4: "am"
+            };
+
+            let correct = 0;
+            let total = Object.keys(answers).length;
+
+            for (let key in answers) {
+                let userAnswer = document.getElementById(key).value.trim().toLowerCase();
+                if (userAnswer === answers[key]) {
+                    correct++;
+                    document.getElementById(key).style.backgroundColor = "lightgreen";
+                } else {
+                    document.getElementById(key).style.backgroundColor = "lightcoral";
+                }
+            }
+
+            document.getElementById("result").innerText = `You got ${correct} out of ${total} correct!`;
+        }
+
+        function checkTrueFalse(question, answer) {
+            const resultId = `tf-result-${question}`;
+            const result = document.getElementById(resultId);
+            const correctAnswers = {
+                'a': false,
+                'b': true,
+                'c': true,
+                'd': true
+            };
+
+            if (correctAnswers[question] === answer) {
+                result.textContent = 'Правильно!';
+            } else {
+                result.textContent = 'Неправильно. Попробуйте еще раз.';
+            }
+        }
+    </script>
+</body>
+
+</html>
