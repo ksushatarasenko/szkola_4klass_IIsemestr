@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №082</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 6. Ділення на одноцифрове число</h1>
+            <h2>Урок 82. Знаходження часу руху до зустрічі</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Сьогодні ти навчишся знаходити час руху об’єктів до зустрічі, розв’яжеш кілька цікавих задач і накреслиш відрізок, визначивши його довжину.</h3>
+            <div class="p" >
+                <a href="https://elpom.com.ua/training/matematychni-trenazher-mnozhennya-chysel-2-9/#google_vignette" target="_blank" style="color: rgb(210, 33, 154);">Математичні тренажери. Множення чисел 2-9</a>
+            </div>
+        <!--  -->
+            
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfclB25XDhdYjUgp_g?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- PRAWILO -->
+             <div class="image">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1Tgfcm4Fth0PjFwLTaAA?embed=1&width=1340&height=574" alt="81-1">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfcnTF26nouT58b5Yw?embed=1&width=1340&height=556" alt="82-2">
+             </div>
+            <!-- interaktiv -->
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/40497ca36354431eb5a471756b430037?themeId=44&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- video 2 -->
+           
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfckK0m-Buly0QIAPA?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу: <br><span class="red">513 : 3</span> <br>Виконай ділення у стовпчик.
+                    </p>
+                   
+                    <label>
+                        <input type="radio" name="q1" value="1"> 271
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 161
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 171
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Щоб знайти час руху об’єктів до зустрічі, потрібно всю відстань…
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> помножити на швидкість зближення об’єктів
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> поділити на швидкість зближення об’єктів
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> додати до швидкості
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div><hr>
+                <div class="question" data-correct="3">
+                    <p class="vopros">3) Два равлики, відстань між якими 40 см, вирушили назустріч один одному. Кожний равлик рухався зі швидкістю 10 см/хв. Через скільки часу равлики зустрінуться?</p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 80 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 4 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 2 хв 
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://1drv.ms/w/s!Av5Voug-ar1TgfcoO7n8FCGiD_yn1w?embed=1&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>

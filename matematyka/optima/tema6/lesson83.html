@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №083</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 6. Ділення на одноцифрове число</h1>
+            <h2>Урок 83. Ділення трицифрового числа з нулями в частці</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Сьогодні ти навчишся ділити в стовпчик числа, в результаті ділення яких у частці отримуємо нуль, розв’яжеш рівняння, попрацюєш над задачами та розв’яжеш логічне завдання.</h3>
+            <div class="p" >
+                <a href="https://elpom.com.ua/training/matematychni-trenazher-mnozhennya-chysel-2-9/#google_vignette" target="_blank" style="color: rgb(210, 33, 154);">Математичні тренажери. Множення чисел 2-9</a>
+            </div>
+        <!--  -->
+            
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfcqAQtRtlWxpgixmA?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- PRAWILO -->
+             <div class="image">
+                <img src="../../../image/dzwonek.png" alt="dzwonek" style="width: 10%;">
+                <h2>Розглянь, як знаходили частку 816 : 4.</h2>
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfcrPiLrpd4bNcA6AA?embed=1&width=328&height=266" alt="83-1" style="width: 20%;">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfcsaTsXlC6SCaFC0Q?embed=1&width=1278&height=918" alt="83-2">
+             </div>
+            <!-- interaktiv -->
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/0b4bf00035e9427a8c24dc873da925cb?themeId=22&templateId=71&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- video 2 -->
+           
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1Tgfcpooolm114CX-C7A?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу: <br><span class="red">2069· 4 </span> <br>Виконай ділення у стовпчик.
+                    </p>
+                   
+                    <label>
+                        <input type="radio" name="q1" value="1"> 8767 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 8267 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 8276 
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи вираз, часткою якого є число <b>29:</b></p><br>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 232 : 4 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 232 : 8
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 168 : 3 
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">3) Довжина прямокутника 8 см, ширина – 6 см. Як зміниться площа прямокутника, якщо довжину збільшити вдвічі? <br></p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> Площа не зміниться 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> Площа збільшиться 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> Площа зменшиться 
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://1drv.ms/w/s!Av5Voug-ar1Tgfct9DUZHO-ZKEJrWA?embed=1&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>
