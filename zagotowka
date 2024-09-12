@@ -1,3 +1,40 @@
 60см<sup>2</sup>  см в квадрате
 
 &nbsp;  -  probel
+
+SELECT
+
+<div id="exercise1">
+                <h2>Установи відповідність між виразами та їхніми значеннями.</h2>
+                <div class="task">
+                    <label for="select1" class="p20">3000 : 100 = </label>
+                    <select id="select1" class="select">
+                        <option value="">Вибрати...</option>
+                        <option value="30">30</option>
+                        <option value="500">500</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="task">
+                    <label for="select2" class="p20">3000 : 6 = </label>
+                    <select id="select2" class="select">
+                        <option value="">Вибрати...</option>
+                        <option value="30">30</option>
+                        <option value="500">500</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="task">
+                    <label for="select3" class="p20">3000 : 300 = </label>
+                    <select id="select3" class="select">
+                        <option value="">Вибрати...</option>
+                        <option value="30">30</option>
+                        <option value="500">500</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Здесь передаем exercise3 вместо exercise1 -->
+            <button onclick="checkAnswersOption('exercise1')" class="button">Перевірити</button>
+            <p id="result"></p>
+            

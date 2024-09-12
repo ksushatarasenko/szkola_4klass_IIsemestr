@@ -41,3 +41,41 @@ function checkAnswers() {
         result.className = 'incorrect';
     }
 }
+// checkAnswersOption
+function checkAnswersOption(exerciseId) {
+    // Правильные ответы для всех упражнений
+    const correctAnswers = {
+        exercise1: { select1: 30 },  // 3000 : 100 = 30
+        exercise2: { select2: 500 }, // 3000 : 6 = 500
+        exercise3: { select3: 10 }   // 3000 : 300 = 10
+    };
+
+    // Получаем ответы пользователя для данного упражнения
+    const userAnswers = {};
+    const exerciseElement = document.getElementById(exerciseId);
+    const selects = exerciseElement.getElementsByTagName('select');
+
+    // Для каждого select элемента получаем его значение
+    for (let select of selects) {
+        userAnswers[select.id] = parseInt(select.value);
+    }
+
+    // Сравниваем ответы с правильными
+    let correct = true;
+    for (let key in correctAnswers[exerciseId]) {
+        if (userAnswers[key] !== correctAnswers[exerciseId][key]) {
+            correct = false;
+            break;
+        }
+    }
+
+    // Выводим результат
+    const resultElement = document.getElementById("result1");
+    if (correct) {
+        resultElement.textContent = "Всі відповіді правильні для " + exerciseId + "!";
+        resultElement.style.color = "green";
+    } else {
+        resultElement.textContent = "Є помилки в відповідях для " + exerciseId + ".";
+        resultElement.style.color = "red";
+    }
+}
