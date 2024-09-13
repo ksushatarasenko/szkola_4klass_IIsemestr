@@ -33,7 +33,7 @@ function checkAnswers() {
 
     }
 
-    const result = document.getElementById('result');
+    const result = document.getElementById('result1');
     result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
     if (score === total) {
         result.className = 'correct';
@@ -58,6 +58,11 @@ const correctAnswers = {
         select1: 534, // 89 · 6 = 534
         select2: 628, // 157 · 4 = 628
         select3: 627  // 209 · 3 = 627
+    },
+    exercise91: {
+        select1: '6 тис.',  // Здесь строка
+        select2: '6 дес.',  // Здесь строка
+        select3: 160        // Здесь число
     }
 };
 
@@ -75,10 +80,10 @@ function checkAnswersOption(exerciseId) {
     // Проверяем все select внутри задания
     for (let select of selects) {
         const selectId = select.id;
-        const userAnswer = parseInt(select.value);
+        const userAnswer = select.value;  // Получаем значение как строку
 
         // Сравниваем ответ пользователя с правильным
-        if (userAnswer !== answers[selectId]) {
+        if (userAnswer !== String(answers[selectId])) {  // Преобразуем правильный ответ в строку для корректного сравнения
             allCorrect = false;
             break;
         }

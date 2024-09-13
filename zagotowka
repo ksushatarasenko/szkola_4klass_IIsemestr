@@ -7,7 +7,7 @@
 SELECT
 
 <div id="exercise1">
-                <h2>Установи відповідність між виразами та їхніми значеннями.</h2>
+               <h3 style="text-align: center;">Установи відповідність між виразами та їхніми значеннями.</h3>
                 <div class="task">
                     <label for="select1" class="p20">3000 : 100 = </label>
                     <select id="select1" class="select">
@@ -38,5 +38,5 @@ SELECT
             </div>
             <!-- Здесь передаем exercise3 вместо exercise1 -->
             <button onclick="checkAnswersOption('exercise1')" class="button">Перевірити</button>
-            <p id="result"></p>
+            <p id="result1"></p>
             
