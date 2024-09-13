@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 89 (за уроками 85–89)</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 6. Ділення на одноцифрове число</h1>
+            <h2>Тест 89 (за уроками 85–89)</h2>
+            
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <section class="voproses">
+                <form id="quiz-form">
+                    <div class="question" data-correct="1">
+                        <p class="vopros">1) Укажи число, яке відповідає розв’язанню задачі: В мережу магазинів привезли 1672 одиниці товару. Їх розподілили між 8 магазинами. По скільки одиниць товару отримає кожен магазин?</p>
+                        <label>
+                            <input type="radio" name="q1" value="1"> 209
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q1" value="2"> 207
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q1" value="3"> 109
+                        </label><br>
+                        <p class="marker" id="q1-result"></p>
+                    </div>
+                    <hr>
+                    <div class="question" data-correct="3">
+                        <p class="vopros ">2) Розв’яжи  рівняння: <span class="red">х · 6 = 834150</span></p>
+                        <label>
+                            <input type="radio" name="q2" value="1"> 139205
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q2" value="2"> 109025
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q2" value="3"> 139025
+                        </label><br>
+                        <p class="marker" id="q2-result"></p>
+                    </div>
+                    <hr>
+                    <div class="question" data-correct="1">
+                        <p class="voproses">3) Обчисли вираз: <br> <span class="red italic">96384 : 4 + 2048 · 8</span></p>
+                        <label>
+                            <input type="radio" name="q3" value="1"> 40480
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q3" value="2"> 40408
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q3" value="3"> 40080
+                        </label><br>
+                        <p class="marker" id="q3-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="3">
+                        <p class="vopros">4) Розв’яжи рівняння: <br><span class="red">х · 6 = 150180</span> </p>
+                        <label>
+                            <input type="radio" name="q4" value="1"> 25300
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q4" value="2"> 25003
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q4" value="3"> 25030
+                        </label><br>
+                        <p class="marker" id="q4-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="2">
+                        <p class="vopros">5) Обчисли значення виразу (в стовпчик): <br><span class="red">3582 : 9 =</span></p>
+                        <label>
+                            <input type="radio" name="q5" value="1"> 308
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q5" value="2"> 398
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q5" value="3"> 389
+                        </label><br>
+                        <p class="marker" id="q5-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="2">
+                        <p class="vopros">6) Обчисли значення виразу (в стовпчик): <br><span class="red">1332 : 9 =</span></p>
+                        <label>
+                            <input type="radio" name="q6" value="1"> 108
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q6" value="2"> 148
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q6" value="3"> 184
+                        </label><br>
+                        <p class="marker" id="q6-result"></p>
+                    </div>
+                    <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+                </form>
+                <p id="result"></p>
+            </section>
+            
+           
+            
+            <script src="../../../scriptMatemat.js"></script>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -41,37 +41,52 @@ function checkAnswers() {
         result.className = 'incorrect';
     }
 }
-// checkAnswersOption
-function checkAnswersOption(exerciseId) {
-    // Правильные ответы для всех упражнений
-    const correctAnswers = {
-        exercise1: { select1: 30 },  // 3000 : 100 = 30
-        exercise2: { select2: 500 }, // 3000 : 6 = 500
-        exercise3: { select3: 10 }   // 3000 : 300 = 10
-    };
 
-    // Получаем ответы пользователя для данного упражнения
-    const userAnswers = {};
+// --------------------------------
+
+
+// checkAnswersOption
+
+// Объект с правильными ответами для каждого упражнения
+const correctAnswers = {
+    exercise1: {
+        select1: 30,  // 3000 : 100 = 30
+        select2: 500, // 3000 : 6 = 500
+        select3: 10   // 3000 : 300 = 10
+    },
+    exercise89: {
+        select1: 534, // 89 · 6 = 534
+        select2: 628, // 157 · 4 = 628
+        select3: 627  // 209 · 3 = 627
+    }
+};
+
+function checkAnswersOption(exerciseId) {
+    // Получаем правильные ответы для конкретного упражнения
+    const answers = correctAnswers[exerciseId];
+
+    // Получаем блок с упражнением по ID
     const exerciseElement = document.getElementById(exerciseId);
     const selects = exerciseElement.getElementsByTagName('select');
 
-    // Для каждого select элемента получаем его значение
-    for (let select of selects) {
-        userAnswers[select.id] = parseInt(select.value);
-    }
+    // Флаг для определения правильности всех ответов
+    let allCorrect = true;
 
-    // Сравниваем ответы с правильными
-    let correct = true;
-    for (let key in correctAnswers[exerciseId]) {
-        if (userAnswers[key] !== correctAnswers[exerciseId][key]) {
-            correct = false;
+    // Проверяем все select внутри задания
+    for (let select of selects) {
+        const selectId = select.id;
+        const userAnswer = parseInt(select.value);
+
+        // Сравниваем ответ пользователя с правильным
+        if (userAnswer !== answers[selectId]) {
+            allCorrect = false;
             break;
         }
     }
 
     // Выводим результат
-    const resultElement = document.getElementById("result1");
-    if (correct) {
+    const resultElement = document.getElementById("result");
+    if (allCorrect) {
         resultElement.textContent = "Всі відповіді правильні для " + exerciseId + "!";
         resultElement.style.color = "green";
     } else {

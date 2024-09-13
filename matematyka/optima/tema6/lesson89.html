@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №089</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 6. Ділення на одноцифрове число</h1>
+            <h2>Урок 89. Письмове ділення з остачею</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Сьогодні ти навчишся ділити числа з остачею, пригадаєш вирази, які називаються сумою, часткою та добутком і, звичайно, повправляєшся у розв’язуванні задач.
+            </h3>
+            <div class="p">
+                <a href="https://elpom.com.ua/training/matematychni-trenazher-mnozhennya-chysel-2-9/#google_vignette"
+                    target="_blank" style="color: rgb(210, 33, 154);">Математичні тренажери. Множення чисел 2-9</a>
+            </div>
+            <!--  -->
+
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfdJU-ixGgKNItYv-g?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- PRAWILO -->
+            <div class="image">
+                <img src="../../../image/dzwonek.png" alt="dzwonek" style="width: 10%;">
+                <h2>Прочитай, як знаходили решту частки від ділення з остачею.</h2>
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfdMt5dlj-dK2V8N-g?embed=1&width=526&height=326" alt="89-2"
+                    style="width: 20%;">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfdLrB-pCzNvGizQ9w?embed=1&width=1280&height=500" alt="89-1"
+                    style="width: 70%;">
+            </div>
+            <!-- interaktiv -->
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/8e4b1c3e5a2c4288a6a203dae344be1a?themeId=50&templateId=2&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- video 2 -->
+
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfdOR5dVHaFWIdWolw?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу: <br><span class="red">1570· 4</span>
+                        <br>Виконай ділення у стовпчик.
+                    </p>
+
+                    <label>
+                        <input type="radio" name="q1" value="1"> 4280
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 6080
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 6280
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи вираз, що обчислений правильно
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 25 362 : 4 = 634 (ост. 2)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 25 362 : 4 = 6340 (ост. 2)
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 25 362 : 4 = 6340 (ост. 1)
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">3) Олег пройшов 2 км, що становить <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>1</mn><mn>4</mn></mfrac></math> всього шляху. Яку відстань потрібно було пройти Олегу? </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 2 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 8 км
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 500 м
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div><hr>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- select -->
+            <div id="exercise89">
+                <h2>Установи відповідність між виразами та їхніми значеннями.</h2>
+                <div class="task">
+                    <label for="select1" class="p20">89 · 6 = </label>
+                    <select id="select1" class="select">
+                        <option value="">Вибрати...</option>
+                        <option value="534">534</option>
+                        <option value="628">628</option>
+                        <option value="627">627</option>
+                    </select>
+                </div>
+                <div class="task">
+                    <label for="select2" class="p20">157 · 4 = </label>
+                    <select id="select2" class="select">
+                        <option value="">Вибрати...</option>
+                        <option value="534">534</option>
+                        <option value="628">628</option>
+                        <option value="627">627</option>
+                    </select>
+                </div>
+                <div class="task">
+                    <label for="select3" class="p20">209 · 3 = </label>
+                    <select id="select3" class="select">
+                        <option value="">Вибрати...</option>
+                        <option value="534">534</option>
+                        <option value="628">628</option>
+                        <option value="627">627</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Здесь передаем exercise3 вместо exercise1 -->
+            <button onclick="checkAnswersOption('exercise89')" class="button">Перевірити</button>
+            <p id="result"></p>
+            
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://1drv.ms/w/s!Av5Voug-ar1TgfdNR8eqRJmhSfwC0A?embed=1&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>
