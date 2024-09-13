@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №099</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 8. Множення чисел, що закінчуються нулями</h1>
+            <h2>Урок 99. Закріплення вивченого матеріалу
+            </h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            </h3>
+            <div class="p">
+                <a href="https://elpom.com.ua/training/matematychni-trenazher-mnozhennya-chysel-2-9/#google_vignette"
+                    target="_blank" style="color: rgb(210, 33, 154);">Математичні тренажери. Множення чисел 2-9</a>
+            </div>
+            <!--  -->
+
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfdssyNJ65AnR7z-jw?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- PRAWILO -->
+
+            <!-- interaktiv -->
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/8bfac975618e461a949bef9be1b89163?themeId=45&templateId=2&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- video 2 -->
+
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1Tgfdrzk9CiwZM4gGNoA?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="1">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу:  <br><span class="red">764688 : 4</span>
+                        <br> <br>Виконай ділення у стовпчик. 
+                    </p>
+
+                    <label>
+                        <input type="radio" name="q1" value="1"> 191 172
+
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 191 162
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 254 896
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                    <p class="vopros">2) Укажи число, яке є значенням виразу:  <br><br> <span class="red">1317 · 400</span><br><br>Виконай множення у стовпчик. 
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 526 800
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 52 680
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 5268
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="1">
+                <p class="vopros">3) Укажи правильну відповідь: <br><br> <math xmlns="http://www.w3.org/1998/Math/MathML"><mfrac><mn>4</mn><mn>5</mn></mfrac></math>  від 1 год
+                </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 48 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 20 хв
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 20 хв
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="3">
+                <p class="vopros">4) У магазині продали 12 кг 48 г моркви, а огірків — у 2 рази більше. Скільки кілограмів овочів продали?
+                </p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> 37 кг 44 г
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> 14 кг 48 г
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> 36 кг 144 г
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- select -->
+            <!-- pdf -->
+
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>
