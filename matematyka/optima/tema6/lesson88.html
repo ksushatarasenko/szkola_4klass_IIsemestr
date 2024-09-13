@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson №088</title>
+    <link rel="stylesheet" href="../../../style.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 6. Ділення на одноцифрове число</h1>
+            <h2>Урок 88. Ділення багатоцифрового числа на одноцифрове, коли частка закінчується нулями</h2>
+            <h3> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Сьогодні ти навчишся ділити багатоцифрові числа на одноцифрові, коли частка закінчується нулями, а також повправляєшся у розв’язуванні задач на зустрічний рух і в письмовому обчисленні.
+            </h3>
+            <div class="p">
+                <a href="https://elpom.com.ua/training/matematychni-trenazher-mnozhennya-chysel-2-9/#google_vignette"
+                    target="_blank" style="color: rgb(210, 33, 154);">Математичні тренажери. Множення чисел 2-9</a>
+            </div>
+            <!--  -->
+
+            <!-- video 1 -->
+            <h2>Відео, сторінка 1</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfdD2a4l3jamf7p2eg?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- PRAWILO -->
+            <div class="image">
+                <img src="../../../image/dzwonek.png" alt="dzwonek" style="width: 10%;">
+                <h2>Розглянь алгоритм виконання письмового ділення:
+                     <br>110 400 : 4</h2>
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfdFEOtutZpnkgso1A?embed=1&width=638&height=472" alt="88-1"
+                    style="width: 20%;">
+                <img src="https://1drv.ms/i/s!Av5Voug-ar1TgfdGaphOPatoCqaEuw?embed=1&width=1278&height=626" alt="88-2"
+                    style="width: 70%;">
+            </div>
+            <!-- interaktiv -->
+            <div class="video">
+                <iframe style="max-width:100%" src="https://wordwall.net/uk/embed/bf70b50eaf1e4358813b3fb22260b583?themeId=43&templateId=3&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <!-- video 2 -->
+
+            <h2>Відео, сторінка 2</h2>
+            <div class="video">
+                <iframe src="https://1drv.ms/v/s!Av5Voug-ar1TgfdEJijA14wYNdXMBw?embed=1" width="320" height="320" frameborder="0" scrolling="no" allowfullscreen></iframe>
+            </div>
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <form id="quiz-form">
+                <div class="question" data-correct="3">
+                    <p class="vopros">1) Укажи число, яке є значенням виразу: <br><span class="red">120 400 : 4</span>
+                        <br>Виконай ділення у стовпчик.
+                    </p>
+
+                    <label>
+                        <input type="radio" name="q1" value="1"> 3010
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="2"> 3100
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q1" value="3"> 30 100
+                    </label><br>
+                    <p class="marker" id="q1-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">2) Укажи вираз, що обчислений правильно
+                    </p>
+                    <label>
+                        <input type="radio" name="q2" value="1"> 3204 · 6 = 19 204
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="2"> 3204 · 6 = 19 224
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q2" value="3"> 3204 · 6 = 1924
+                    </label><br>
+                    <p class="marker" id="q2-result"></p>
+                </div>
+                <hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">3) Укажи число, яке є добутком, якщо: <br> <span class="red">перший множник 5, а другий – сума чисел 186 і 20</span>  </p>
+                    <label>
+                        <input type="radio" name="q3" value="1"> 950
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="2"> 1030
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q3" value="3"> 3725
+                    </label><br>
+                    <p class="marker" id="q3-result"></p>
+                </div><hr>
+                <div class="question" data-correct="2">
+                    <p class="vopros">4) Відстань 1000 м Оля пройшла за 20 хв. З якою швидкістю йшла Оля?</p>
+                    <label>
+                        <input type="radio" name="q4" value="1"> 2000 м/хв 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="2"> 50 м/хв 
+                    </label><br>
+                    <label>
+                        <input type="radio" name="q4" value="3"> 20 хв
+                    </label><br>
+                    <p class="marker" id="q4-result"></p>
+                </div>
+                <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+            </form>
+            <p id="result"></p>
+            <!-- select -->
+            
+            <!-- pdf -->
+            <div class="prezent">
+                <iframe src="https://1drv.ms/w/s!Av5Voug-ar1TgfdH7D0fVVuwQU8jHA?embed=1&em=2" width="476" height="288" frameborder="0" scrolling="no"></iframe>
+            </div>
+            <div class="image">
+                <img src="https://svitdovkola.org/images/chytasia01_153.jpg" alt="dozustrichi">
+            </div>
+            <script src="../../../scriptMatemat.js"></script>
+            <h1 class="red">Сподіваюся, що тобі усе вдалося!</h1>
+        </main>
+    </div>
+
+</body>
+
+</html>
