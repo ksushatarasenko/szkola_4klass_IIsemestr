@@ -443,8 +443,9 @@ th {
    padding: 3%;
 }
 .vopros{
-   font-weight: 800;
+   font-weight: 600;
    margin-bottom: 3%;
+   color: rgb(105, 90, 90);
 }
 label{
    margin-left: 7%;
