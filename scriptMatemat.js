@@ -19,21 +19,37 @@ function checkAnswers() {
     for (let i = 0; i < questions.length; i++) {
         const question = questions[i];
         const correctAnswer = question.getAttribute('data-correct');
-        const selectedAnswer = form[`q${i + 1}`].value;
+        let selectedAnswer = '';
         const resultElement = document.getElementById(`q${i + 1}-result`);
 
+        // Проверка типа вопроса
+        if (question.querySelector('input[type="radio"]')) {
+            // Если это радио-кнопка
+            const radios = form[`q${i + 1}`];
+            for (let radio of radios) {
+                if (radio.checked) {
+                    selectedAnswer = radio.value;
+                }
+            }
+        } else if (question.querySelector('select')) {
+            // Если это select
+            const select = question.querySelector('select');
+            selectedAnswer = select.value;
+        }
+
+        // Сравнение с правильным ответом
         if (selectedAnswer === correctAnswer) {
             score++;
             resultElement.innerHTML = "Правильно! <img src='https://i.pinimg.com/564x/0b/5d/1f/0b5d1f62c0c6ddaa2c9c465264c5343c.jpg' alt='Correct Smiley' width='60' height='60' />";
             resultElement.className = 'marker correct';
-            } else {
+        } else {
             resultElement.innerHTML = "Неправильно! <img src='https://i.pinimg.com/564x/12/7a/db/127adb0185cb2c9c8abac2f28966bb97.jpg' alt='Incorrect Smiley' width='60' height='60' />";
             resultElement.className = 'marker incorrect';
         }
-
     }
 
-    const result = document.getElementById('result1');
+    // Отображение итогового результата
+    const result = document.getElementById('result');
     result.textContent = `Ви відповіли правильно на ${score} з ${total} питань.`;
     if (score === total) {
         result.className = 'correct';
@@ -41,7 +57,6 @@ function checkAnswers() {
         result.className = 'incorrect';
     }
 }
-
 // --------------------------------
 
 
@@ -63,6 +78,11 @@ const correctAnswers = {
         select1: '6 тис.',  // Здесь строка
         select2: '6 дес.',  // Здесь строка
         select3: 160        // Здесь число
+    },
+    exercise96: {
+        select1: 120,  
+        select2: 240,  
+        select3: 15   
     }
 };
 
