@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 110 (за уроками 108–110)</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 10. Множення багатоцифрового числа на двоцифрове</h1>
+            <h2>Тест 110 (за уроками 108–110)</h2>
+            
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <section class="voproses">
+                <form id="quiz-form">
+                    <div class="question" data-correct="3">
+                        <p class="vopros">1) Укажи, скільки дій потрібно для розв’язання задачі: <br><br> З двох міст одночасно назустріч один одному виїхало два автомобілі. Швидкість першого автомобіля 65 км/год, а другого - на 12 км/год більше. Через скільки годин вони зустрінуться, якщо відстань між містами 1420 км?
+
+                        </p>
+                        <label>
+                            <input type="radio" name="q1" value="1"> 1
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q1" value="2"> 2
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q1" value="3"> 3
+                        </label><br>
+                        <p class="marker" id="q1-result"></p>
+                    </div>
+                    <hr>
+                    <div class="question" data-correct="2">
+                        <p class="vopros ">2) Обчисли значення виразу (в стовпчик): <br><br> <span class="violet"> 218 · 36  =</span></p>
+                        <label>
+                            <input type="radio" name="q2" value="1"> 7484
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q2" value="2"> 7848
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q2" value="3"> 7884
+                        </label><br>
+                        <p class="marker" id="q2-result"></p>
+                    </div>
+                    <hr>
+                    <div class="question" data-correct="2">
+                        <p class="voproses">3) Обчисли значення виразу (в стовпчик):  <br> <br> <span class="violet">36900 : 300 =</span> </p>
+                        <label>
+                            <input type="radio" name="q3" value="1"> 1637
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q3" value="2"> 1376
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q3" value="3"> 1367
+                        </label><br>
+                        <p class="marker" id="q3-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="3">
+                        <p class="vopros">4) Укажи розв’язання до задачі: <br><br> У спортивний магазин привезли 56 підліткових велосипедів по ціні 7345 гривень за велосипед. Яка вартість усіх підліткових велосипедів?</p>
+                        <label>
+                            <input type="radio" name="q4" value="1"> 56 + 7345
+
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q4" value="2"> 7345 : 56
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q4" value="3"> 7345 · 56
+                        </label><br>
+                        <p class="marker" id="q4-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="3">
+                        <p class="vopros">5) Укажи розв’язання до задачі: <br><br> У салон привезли 67 весільних суконь по ціні 9842 гривні за сукню. Яка вартість усіх суконь?</p>
+                        <label>
+                            <input type="radio" name="q5" value="1"> 9842 : 67
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q5" value="2"> 67 + 9842
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q5" value="3"> 9842 · 67
+                        </label><br>
+                        <p class="marker" id="q5-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="1">
+                        <p class="vopros">6) Обчисли значення виразу (в стовпчик):  <br><br> <span class="violet">23 · 45  =</span> </p>
+                        <label>
+                            <input type="radio" name="q6" value="1"> 1035
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q6" value="2"> 1350
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q6" value="3"> 1053
+                        </label><br>
+                        <p class="marker" id="q6-result"></p>
+                    </div>
+                    <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+                </form>
+                <p id="result"></p>
+            </section>
+            
+           
+            
+            <script src="../../../scriptMatemat.js"></script>
+        </main>
+    </div>
+</body>
+
+</html>

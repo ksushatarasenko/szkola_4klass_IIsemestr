@@ -107,6 +107,9 @@ p{
 .coral{
    color: coral;
 }
+.violet{
+   color: rgb(137, 22, 137);
+}
 .b{
    font-weight: 900;
    color: blue;
