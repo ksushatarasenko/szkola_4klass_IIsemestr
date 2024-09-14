@@ -440,7 +440,7 @@ th {
    width: 100%;
    font-size: 20px;
    background-color: rgb(209, 236, 249);
-   padding: 3%;
+   padding: 2%;
 }
 .vopros{
    font-weight: 600;
@@ -450,6 +450,11 @@ th {
 label{
    margin-left: 7%;
 }
+
+label input{
+   margin-top: 2%;
+}
+
 #quiz-form{
    padding: 2%;
    width: 95%;

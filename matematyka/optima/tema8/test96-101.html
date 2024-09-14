@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест 101 (за уроками 96–101)</title>
+    <link rel="stylesheet" href="../../../style.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <ul class="ulhead">
+                <li class="li"><a href="../../index.html">Home</a></li>
+            </ul>
+            <ul class="ulhead">
+                <li class="li"><a href="../../../matematyka/indexMatemat.html">Математика</a></li>
+                <li class="li"><a href="../../../ukrMova/movaHome.html">Укр.мова</a></li>
+                <li class="li"><a href="../../../czytanie/chytaniaHome.html">Читання</a></li>
+                <li class="li"><a href="../../../jds/jdsHome.html">ЯДС</a></li>
+                <li class="li"><a href="../../../english/englishHome.html">English</a></li>
+                <li class="li"><a href="../../../informatyka/informatykaHome.html">Інформатика</a></li>
+                <li class="li"><a href="../lesson10.html">Мистецтво</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <h1>Тема 8. Множення чисел, що закінчуються нулями</h1>
+            <h2>Тест 101 (за уроками 96–101)</h2>
+            
+            <!-- zadanie -->
+            <h2>Контрольні питання</h2>
+            <section class="voproses">
+                <form id="quiz-form">
+                    <div class="question" data-correct="3">
+                        <p class="vopros">1) Розв’яжи  рівняння: <br><br> <span class="red">х · 3 = 180612</span></p>
+                        <label>
+                            <input type="radio" name="q1" value="1"> 60402
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q1" value="2"> 60024
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q1" value="3"> 60204
+                        </label><br>
+                        <p class="marker" id="q1-result"></p>
+                    </div>
+                    <hr>
+                    <div class="question" data-correct="2">
+                        <p class="vopros ">2) Обчисли значення виразу (в стовпчик):   <br><br><span class="red">3510 · 600 =</span></p>
+                        <label>
+                            <input type="radio" name="q2" value="1"> 21060
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q2" value="2"> 2106000
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q2" value="3"> 210600
+                        </label><br>
+                        <p class="marker" id="q2-result"></p>
+                    </div>
+                    <hr>
+                    <div class="question" data-correct="3">
+                        <p class="voproses">3) З однієї ділянки зібрали 3 т 216 кг картоплі, а з другої – вдвічі більше. Скільки кг картоплі зібрали з двох ділянок разом?</p>
+                        <label>
+                            <input type="radio" name="q3" value="1"> 9684 кг
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q3" value="2"> 6432 кг
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q3" value="3"> 9648 кг
+                        </label><br>
+                        <p class="marker" id="q3-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="2">
+                        <p class="vopros">4) В кіоск першого дня  привезли 3 однакові плюшеві іграшки, а другого дня – 5. За всі іграшки  виручили 800 гривень. Скільки коштувала одна іграшка?</p>
+                        <label>
+                            <input type="radio" name="q4" value="1"> 250 грн
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q4" value="2"> 100 грн
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q4" value="3"> 300 грн
+                        </label><br>
+                        <p class="marker" id="q4-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="1">
+                        <p class="vopros">5) На одному полі посіяли 2 т 214 кг зерна, а на другому – вдвічі менше. Скільки кг зерна посіяли на двох ділянках разом?</p>
+                        <label>
+                            <input type="radio" name="q5" value="1"> 3321 кг
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q5" value="2"> 3312 кг
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q5" value="3"> 1107 кг
+                        </label><br>
+                        <p class="marker" id="q5-result"></p>
+                    </div><hr>
+                    <div class="question" data-correct="2">
+                        <p class="vopros">6) Розв’яжи рівняння: <br><span class="red">х · 7 = 71421</span></p>
+                        <label>
+                            <input type="radio" name="q6" value="1"> 10302
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q6" value="2"> 10203
+                        </label><br>
+                        <label>
+                            <input type="radio" name="q6" value="3"> 10032
+                        </label><br>
+                        <p class="marker" id="q6-result"></p>
+                    </div>
+                    <button type="button" onclick="checkAnswers()" class="button">Відправити</button>
+                </form>
+                <p id="result"></p>
+            </section>
+            
+           
+            
+            <script src="../../../scriptMatemat.js"></script>
+        </main>
+    </div>
+</body>
+
+</html>
